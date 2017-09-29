@@ -173,3 +173,8 @@ hr {
   margin-top: 40px !important;
   position: relative;
 }
+
+.contact-container {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}

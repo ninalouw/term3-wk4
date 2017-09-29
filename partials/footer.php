@@ -1,10 +1,10 @@
     <footer class="page-footer">
         <div class="container">
             <address>
-            <strong>Time to Do You</strong><br>
+            <strong>Time To Do You</strong><br>
             1355 Market Street, Suite 900<br>
-            New York, NY 94103<br>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
+            Vancouver, V5L 2W9<br>
+            <abbr title="Phone">P:</abbr> (604) 456-7890
             </address>
 
             <address>
