@@ -15,6 +15,19 @@ $font-size-md: 1.5rem;
 $line-thick: 5px;
 $border-thick : $primary-color solid $line-thick;
 
+//mixins
+@mixin soft-shadow {
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17);
+    -moz-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17);
+}
+
+@mixin btn-shadow {
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(112,108,112,1);
+-moz-box-shadow: 0px 1px 4px 0px rgba(112,108,112,1);
+box-shadow: 0px 1px 4px 0px rgba(112,108,112,1);
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 }
@@ -55,6 +68,21 @@ p {
 }
 a:hover {
     color: $primary-color;
+}
+
+//buttons
+.btn-primary {
+    color: #fff;
+    background-color: $hover-color;
+    border-color: $hover-color;
+    border-radius: none;
+    text-transform: uppercase;
+    @include btn-shadow;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: $primary-color;
+    border-color:$primary-color;
 }
 
 
@@ -146,6 +174,18 @@ hr {
 	.btn-primary {
         margin-top: 20px;
     }
+}
+
+//home page image cards
+.card {
+    @include soft-shadow;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 //footer
 .page-footer {
