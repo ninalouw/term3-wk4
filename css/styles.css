@@ -1,0 +1,44 @@
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0 15px;
+}
+
+p, button {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #00A6B6;
+}
+
+.navbar-li-a {
+  color: black;
+}
+
+.logo {
+  width: 15%;
+  margin: 10px;
+}
+
+hr {
+  color: #00A6B6;
+  border-top: 1px solid #00A6B6;
+  margin: 0px;
+}
+
+.page-footer {
+  background-color: #00A6B6;
+  color: white;
+  padding: 40px;
+  margin-top: 40px !important;
+  position: relative;
+}

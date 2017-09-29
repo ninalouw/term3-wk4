@@ -9,7 +9,7 @@
     <title>VANARTS STUDENT MOCK PROJECT SITE</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <!-- Bootstrap -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     
@@ -20,3 +20,27 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <span><a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo">Time To Do You</a></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.php">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr>

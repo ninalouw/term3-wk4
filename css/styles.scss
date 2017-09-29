@@ -1,0 +1,54 @@
+//colors
+$text-color: black;
+$button-color: #00A6B6;
+$primary-color: #00A6B6;
+
+//fonts
+$text-font: 'Lato', sans-serif;;
+$heading-font-size: 3rem;
+$para-font-size: 1.8rem;
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $text-font;
+  font-size: $heading-font-size;
+  font-weight: 700;
+  margin: 20px 0 15px;
+}
+
+p, button {
+    font-family: $text-font;
+    font-size: $para-font-size;
+}
+
+//navbar
+.bg-light {
+    background-color: #f8f9fa!important;
+}
+.navbar-light .navbar-brand {
+    color: $primary-color;
+}
+.navbar-li-a {
+    color: black;
+}
+
+.logo {
+    width:15%;
+    margin:10px;
+}
+
+hr {
+    color: $primary-color;
+    border-top: 1px solid $primary-color;
+    margin:0px;
+}
+
+//footer
+.page-footer {
+    background-color: $primary-color;
+    color: white;
+    padding: 40px;
+    margin-top:40px !important;
+    position: relative;
+}
