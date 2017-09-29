@@ -25,8 +25,8 @@
         if(db_connect()) {
             $query = " SELECT * FROM product_tb
                       INNER JOIN category_tb
-                      ON product_tb.id=category_tb.product_id
-                      ORDER BY id ";
+                      ON category_tb.category_id=product_tb.category_id
+                      ORDER BY product_id ";
             $queryResult = mysqli_query(db_connect(), $query);
             // var_dump($queryResult);
 
@@ -38,7 +38,7 @@
 
                 while($rowArray = mysqli_fetch_assoc($queryResult)) {	
 
-                    $id = $rowArray["id"];
+                    $productId = $rowArray["product_id"];
                     $title = $rowArray["title"];
                     $unformattedImage = $rowArray["image"];
                     //image has ../, remove it
@@ -50,7 +50,7 @@
                     $lowerCaseCategory = strtolower($rowArray["category_name"]);
                     echo "
                         <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
-                            <input type='hidden' name='".$id."' value='".$id."'>
+                            <input type='hidden' name='".$productId."' value='".$productId."'>
                             <input type='hidden' name='".$categoryId."' value='".$categoryId."'>
                             <div class='card'>
                             <img class='card-img-top' src='$image' alt='Card image'>
