@@ -58,7 +58,8 @@
 									echo '<input type="hidden" name="'.$name.'" value="'.$value.'">';
 								}
 							}
-							echo '<input type="hidden" name="tb" value="'.$tb.'">';
+                            echo '<input type="hidden" name="tb" value="'.$tb.'">';
+                            echo '<input type="hidden" name="id" value="'.$id.'">';
 							echo '<input type="submit" class="btn btn-primary" value="Edit">';
 						}
 						echo '</form>';

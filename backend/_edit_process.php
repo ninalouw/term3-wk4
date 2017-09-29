@@ -5,6 +5,7 @@
 	db_connect();
 
 	if(db_connect()) {
+        echo "Connected";
 		if(isset($_POST["id"])) {
 
 			$update = "UPDATE ".$_POST["tb"]." SET ";
@@ -14,7 +15,7 @@
 				}
 			}
 			$update = rtrim($update, ", ");
-			$update .= " WHERE id='".mysqli_real_escape_string(db_connect(), $_POST['id'])."'";
+			$update .= " WHERE product_id='".mysqli_real_escape_string(db_connect(), $_POST['id'])."'";
 
 			$updateResult = mysqli_query(db_connect(), $update);
 
@@ -23,7 +24,9 @@
 				echo "<script>window.location='admin.php';</script>";
 			}
 			else {
-				echo"<p class='bg-warning'>Update failed!</p>";
+                echo"<p class='bg-warning'>Update failed!</p>";
+                var_dump($udpateResult);
+                var_dump($update);
 			}
 		}
 		db_close(db_connect());
