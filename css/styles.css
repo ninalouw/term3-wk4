@@ -1,15 +1,46 @@
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Lato", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 20px 0 15px;
+body {
+  font-family: 'Lato', sans-serif;
 }
 
-p, button {
-  font-family: "Lato", sans-serif;
-  font-size: 1.8rem;
+h1 {
+  font-size: 3rem;
+  color: #00A6B6;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #00A6B6;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.7rem;
+  color: #00A6B6;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #00A6B6;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.4rem;
+  background-color: white;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  color: black;
+  line-height: 2rem;
+}
+
+a:hover {
+  color: #00A6B6;
 }
 
 .bg-light {
@@ -20,8 +51,12 @@ p, button {
   color: #00A6B6;
 }
 
-.navbar-li-a {
-  color: black;
+.navbar-light .navbar-brand:hover {
+  color: #0dd5f5;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0dd5f5;
 }
 
 .logo {
@@ -31,8 +66,73 @@ p, button {
 
 hr {
   color: #00A6B6;
-  border-top: 1px solid #00A6B6;
+  border-top: 2px solid #00A6B6;
   margin: 0px;
+}
+
+/* Hero Section */
+.center-hero {
+  text-align: left;
+  font-size: 3rem;
+  color: #00A6B6;
+  font-weight: bold;
+}
+
+.center-hero-text {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.hero-container {
+  position: relative;
+}
+
+/*video of hero section */
+.hero-video {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-item, .hero-video {
+    width: 100%;
+  }
+}
+
+.hero-item {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.hero-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Media query for responsiveness */
+@media screen and (max-width: 1200px) {
+  .hero-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .hero-item {
+    align-self: center;
+  }
+  .hero-one {
+    order: 2;
+  }
+  .hero-two {
+    order: 1;
+  }
+  .btn-primary {
+    margin-top: 20px;
+  }
 }
 
 .page-footer {
