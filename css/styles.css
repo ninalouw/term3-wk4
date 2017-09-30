@@ -221,3 +221,7 @@ hr {
 .admin-container {
   margin-top: 40px;
 }
+
+.image-preview .img-responsive {
+  width: 50%;
+}

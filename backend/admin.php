@@ -38,8 +38,14 @@
                         $productId = $rowArray["product_id"];
                         $title = $rowArray["title"];
                         $unformattedImage = $rowArray["image"];
-                        //add ../ to image path
-                        $image = substr_replace($unformattedImage, '../',0,0);
+                        //check image path
+                        if (strpos($unformattedImage, '../') !== false) {
+                            //do nothing
+                            $image = $unformattedImage;
+                        } else {
+                            //add ../ to image path
+                            $image = substr_replace($unformattedImage, '../',0,0);
+                        }
                         $price = $rowArray["price"];
                         //categories
                         $categoryId = $rowArray["category_id"];

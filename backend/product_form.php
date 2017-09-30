@@ -23,8 +23,14 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-md-6 col-lg-6">
-                        <label for="client">Category</label>
-                        <input type="text" class="form-control" id="category_id" placeholder="Category" name="category_id" required>
+                        <label for="category">Category</label>
+                            <select class="form-control custom-select" name="category_id">
+                                <option value="1" selected>Tops</option>
+                                <option value="2">Pants</option>
+                                <option value="3">Accessories</option>
+                                <option value="4">Bras</option>
+                                <option value="5">Mats</option>
+                            </select>
                     </div>
                 </div>
 
@@ -77,11 +83,11 @@
             $insertResult = mysqli_query($connection, $insert);
 
             if(!$insertResult){
-                echo "<p class='bg-warning'>Failed to add product!</p>";
+                echo "<div class='p-3 mb-2 bg-danger text-white'>Failed to add product!</div>";
             } else {
-                echo "<p class='bg-success'>Successfully added product!</p>";
+                echo "<div class='p-3 mb-2 bg-success text-white'>Successfully added product!</div>";
                 echo "<script>window.location = 'admin.php';</script>";
-                echo "<p class='bg-success'>Successfully added product!</p>";
+                echo "<div class='p-3 mb-2 bg-success text-white'>Successfully added product!</div>";
             }
         }
         mysqli_close($connection);

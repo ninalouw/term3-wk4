@@ -1,7 +1,7 @@
 <!-- EDIT -->
 <?php include 'back_header.php'?>
 <body>
-    <div class="container">
+    <div class="container admin-container">
 		<h3>Edit Your Product </h3>
 		<?php
 			include "db.php";
@@ -14,7 +14,7 @@
 					$tb = mysqli_real_escape_string(db_connect(), $_GET["tb"]);
 
 					$query = "SELECT * FROM ".$tb." WHERE product_id='".$id."'";
-					$queryResult = mysqli_query(db_connect(), $query);
+                    $queryResult = mysqli_query(db_connect(), $query);
 
 					if($queryResult) {
                         echo "<div class='col-sm-12 col-md-12 col-lg-12'>";
@@ -48,8 +48,13 @@
                                     echo "<div class='form-group row'>";
                                     echo "<div class='col-sm-12 col-md-6 col-lg-6'>";
 									echo '<label>'.$name.': </label>';
-									echo "<select  class='form-control name='".$name."' value='".$value."'>";
-									echo "<option>" . $value . "</option>";
+                                    echo "<select  class='form-control name='".$name."' value='".$value."'>";
+                                    echo "<option value='".$value."' selected>" . $value. "</option>";
+                                    echo "<option value='1' selected>Tops</option>";
+                                    echo "<option value='2'>Pants</option>";
+                                    echo "<option value='3'>Accessories</option>";
+                                    echo "<option value='4'>Bras</option>";
+                                    echo "<option value='5'>Mats</option>";
 									echo "</select>";
                                     echo "</div>";
                                     echo "</div>";

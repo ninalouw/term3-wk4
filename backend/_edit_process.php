@@ -5,7 +5,6 @@
 	db_connect();
 
 	if(db_connect()) {
-        echo "Connected";
 		if(isset($_POST["id"])) {
 
 			$update = "UPDATE ".$_POST["tb"]." SET ";
@@ -20,11 +19,11 @@
 			$updateResult = mysqli_query(db_connect(), $update);
 
 			if($updateResult) {
-                 echo"<p class='bg-success'>Update successful!</p>";
+                 echo"<div class='p-3 mb-2 bg-success text-white'>Updated successfully!</div>";
 				echo "<script>window.location='admin.php';</script>";
 			}
 			else {
-                echo"<p class='bg-warning'>Update failed!</p>";
+                echo"<div class='p-3 mb-2 bg-danger text-white'>Update Failed!</div>";
                 var_dump($udpateResult);
                 var_dump($update);
 			}

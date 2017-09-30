@@ -15,12 +15,11 @@
 			$deleteResult = mysqli_query(db_connect(), $delete);
 
 			if($deleteResult) {
-                echo"<p class='bg-success'>Delete successful!</p>";
+                echo"<div class='p-3 mb-2 bg-success text-white'>Deleted successfully!</div>";
                 echo "<script>window.location = 'admin.php';</script>";
-				echo"<p class='bg-success'>Delete successful!</p>";
 			}
 			else {
-                echo"<p class='bg-warning'>Delete failed!</p>";
+                echo"<div class='p-3 mb-2 bg-danger text-white'>Delete Failed!</div>";
 			}
 		}
 		db_close(db_connect());
