@@ -4,14 +4,14 @@
 <!-- categories filter -->
 <div class="container">
     <section class="filters">
-        <div class="filters-products">
-            <p class="lead"> Choose product categories to view products</p>
+        <div class="filters-categories">
+            <p class="lead">Deselect categories to view products in only the selected categories</p>
             <div class="filters-toggles">
-                <span class="filters-toggle active" data-product="tops">Tops</span>
-                <span class="filters-toggle active" data-product="pants">Pants</span>
-                <span class="filters-toggle active" data-product="accessories">Accessories</span>
-                <span class="filters-toggle active" data-product="bras">Bras</span>
-                <span class="filters-toggle active" data-product="mats">Mats</span>
+                <span class="filters-toggle active" data-category="Tops">Tops</span>
+                <span class="filters-toggle active" data-category="Pants">Pants</span>
+                <span class="filters-toggle active" data-category="Accessories">Accessories</span>
+                <span class="filters-toggle active" data-category="Bras">Bras</span>
+                <span class="filters-toggle active" data-category="Mats">Mats</span>
             </div>
         </div>
     </section>
@@ -49,7 +49,7 @@
                     $categoryName = $rowArray["category_name"];
                     $lowerCaseCategory = strtolower($rowArray["category_name"]);
                     echo "
-                        <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6'>
+                        <div class='category col-lg-3 col-md-3 col-sm-6 col-xs-6' data-category='".$categoryName."'>
                             <input type='hidden' name='".$productId."' value='".$productId."'>
                             <input type='hidden' name='".$categoryId."' value='".$categoryId."'>
                             <div class='card'>
@@ -79,3 +79,4 @@
 </div>
 <!-- php footer -->
 <?php include "partials/footer.php"?>
+<script src="js/filter.js"></script>

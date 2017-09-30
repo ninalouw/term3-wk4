@@ -197,7 +197,7 @@ hr {
     }
 }
 
-.filters-products {
+.filters-categories {
     flex-basis: 65%;
 }
 
@@ -215,13 +215,18 @@ hr {
     margin-bottom: 10px;
 }
 
-.filters-toggle .active {
+.filters-toggle.active {
     background-color: $primary-color;
     color: white;
 }
+
 .filters-toggle:hover {
     background-color: $primary-color;
     color: white;
+}
+
+.hidden {
+    display: none;
 }
 //footer
 .page-footer {

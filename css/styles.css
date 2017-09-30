@@ -177,7 +177,7 @@ hr {
   }
 }
 
-.filters-products {
+.filters-categories {
   flex-basis: 65%;
 }
 
@@ -195,7 +195,7 @@ hr {
   margin-bottom: 10px;
 }
 
-.filters-toggle .active {
+.filters-toggle.active {
   background-color: #00A6B6;
   color: white;
 }
@@ -203,6 +203,10 @@ hr {
 .filters-toggle:hover {
   background-color: #00A6B6;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 .page-footer {
