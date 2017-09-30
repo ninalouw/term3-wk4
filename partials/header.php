@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ca674f794b.js"></script>
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,6 +40,9 @@
             </li>
           </ul>
           <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <i class="fa fa-shopping-cart fa-3x cart-icon" data-toggle="modal" data-target="#Modal" aria-hidden="true"></i>
+            </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="backend/logIn.php">Log In</a>
             </li>

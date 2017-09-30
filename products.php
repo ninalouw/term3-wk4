@@ -1,5 +1,6 @@
 <!-- php header -->
 <?php include "partials/header.php"?>
+<?php include "partials/modal.php"?>
 
 <!-- categories filter -->
 <div class="container">
@@ -80,3 +81,4 @@
 <!-- php footer -->
 <?php include "partials/footer.php"?>
 <script src="js/filter.js"></script>
+<script src="js/cart.js"></script>

@@ -209,6 +209,68 @@ hr {
   display: none;
 }
 
+.cart-icon {
+  color: #00A6B6;
+  padding: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  color: #0dd5f5;
+}
+
+#modal .fade {
+  background-color: white;
+}
+
+#modal .show {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+#modal .modal-content {
+  text-align: center;
+  padding: 20px 30px;
+  border: #00A6B6 solid 1px;
+}
+
+@media screen and (max-width: 575px) {
+  #modal .modal-content {
+    padding: 10px 15px;
+  }
+}
+
+#modal .modal-content .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #00A6B6;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#modal .modal-header {
+  display: block;
+  border-bottom: none;
+}
+
+#modal .modal-body .lead-paragraph {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+#modal .modal-body .cart-items {
+  width: 400px;
+  height: 400px;
+  margin: 30px 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+#modal .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .page-footer {
   background-color: #00A6B6;
   color: white;
