@@ -4,7 +4,7 @@
     <div class="container admin-container">
 		<h3>Edit Your Product </h3>
 		<?php
-			include "db.php";
+			include "backend_db.php";
 
 			if(isset($_GET["id"])) {
 				db_connect();

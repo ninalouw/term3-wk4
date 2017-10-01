@@ -55,7 +55,7 @@
 </div>
 <?php include 'back_footer.php'?>
 <?php
-    include "db.php";
+    include "backend_db.php";
     db_connect();
     
     if(isset($_POST['title']) && isset($_POST['image']) && isset($_POST['price']) && isset($_POST['category_id']) && isset($_POST['submit'])){

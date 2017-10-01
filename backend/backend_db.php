@@ -5,17 +5,17 @@
 
 		if(!isset($connection)) {
 			// Create Connection
-			$host = "localhost";
-			$user = "root";
-			$pw = "root";
-			$db = "users_db";
+			// $host = "localhost";
+			// $user = "root";
+			// $pw = "root";
+			// $db = "users_db";
 
-			$connection = mysqli_connect($host, $user, $pw, $db);
+			// $connection = mysqli_connect($host, $user, $pw, $db);
 			
 			//need separate db func for backend, because folder structure means
 			//backend files are one folder further from con directory
-			// $configArray = parse_ini_file("../../../con/config.ini");
-			// $connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
+			$configArray = parse_ini_file("../../../con/config.ini");
+			$connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
 
 
 			if(!$connection) {

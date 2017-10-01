@@ -9,7 +9,7 @@
 
     <!-- //get data for table -->
         <?php 
-            include "db.php";
+            include "backend_db.php";
             
             db_connect();
 
