@@ -21,7 +21,7 @@
     <!-- start of product cards -->
     <h2 class="text-center">The Luxe Women's Collection</h2>
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/bra-1.jpeg" alt="Card image">
             <div class="card-body">
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/hoodie-1.jpeg" alt="Card image">
             <div class="card-body">
@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/pants-1.jpeg" alt="Card image cap">
             <div class="card-body">
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/pants-2.jpeg" alt="Card image cap">
             <div class="card-body">
@@ -74,7 +74,7 @@
 
     <!-- larger image section -->
     <div class="row center-container">
-        <div class="col-lg-5 col-md-5 col-sm-3 col-xs-6">
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
             <div class="card">
             <img class="card-img-top" src="img/top-md.jpeg" alt="Card image cap">
             <div class="card-body">
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <div class="col-lg-5 col-md-5 col-sm-3 col-xs-6">
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
             <div class="card">
             <img class="card-img-top" src="img/pants-md.jpeg" alt="Card image cap">
             <div class="card-body">
@@ -100,7 +100,7 @@
     <!-- second card section -->
     <h2 class="text-center">The Yoga Collection</h2>
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/bra-2.jpeg" alt="Card image">
             <div class="card-body">
@@ -112,7 +112,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/pants-5.jpeg" alt="Card image">
             <div class="card-body">
@@ -124,7 +124,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/top-1.jpeg" alt="Card image cap">
             <div class="card-body">
@@ -136,7 +136,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile">
             <div class="card">
             <img class="card-img-top" src="img/pants-7.jpeg" alt="Card image cap">
             <div class="card-body">

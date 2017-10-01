@@ -49,7 +49,7 @@
                     $categoryName = $rowArray["category_name"];
                     $lowerCaseCategory = strtolower($rowArray["category_name"]);
                     echo "
-                        <div class='category col-lg-3 col-md-3 col-sm-6 col-xs-6' data-category='".$categoryName."'>
+                        <div class='category col-lg-3 col-md-3 col-sm-6 col-xs-6 card-mobile' data-category='".$categoryName."'>
                             <input type='hidden' name='".$productId."' value='".$productId."'>
                             <input type='hidden' name='".$categoryId."' value='".$categoryId."'>
                             <div class='card'>
