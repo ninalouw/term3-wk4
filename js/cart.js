@@ -46,8 +46,7 @@ function populateModal(){
         var productItem = key;
         var price = items[key];
         var productPara = $('<div data-title=" ' + productItem + ' " class="col-md-5 col-xs-5"><p>' 
-                            + productItem + '</p></div>' 
-                            + '<span><hr></span>' + 
+                            + productItem + '</p></div>' +
                             '<div class="col-md-5 col-xs-5"><p>' 
                             + price + '</p></div>');
     }
