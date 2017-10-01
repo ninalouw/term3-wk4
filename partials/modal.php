@@ -1,4 +1,5 @@
-
+<!-- cart icon -->
+<a data-toggle="modal" data-target="#Modal" aria-hidden="true"><img class="cart-icon" src="img/cart.svg" alt="cart icon"></a>
 <!-- Modal -->
 <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -10,7 +11,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead-paragraph">Your Items</p>
+        <p class="lead">Your Items</p>
         <div class="cart-items"></div>
       </div>
       <div class="modal-footer">

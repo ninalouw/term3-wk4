@@ -23,7 +23,7 @@
   </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span><a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo">Time To Do You</a></span>
+        <span><a class="navbar-brand logo-text" href="#"><img class="logo" src="img/logo.png" alt="logo">Time To Do You</a></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,9 +40,6 @@
             </li>
           </ul>
           <ul class="navbar-nav navbar-right">
-          <li class="nav-item">
-            <i class="fa fa-shopping-cart fa-3x cart-icon" data-toggle="modal" data-target="#Modal" aria-hidden="true"></i>
-            </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="backend/logIn.php">Log In</a>
             </li>

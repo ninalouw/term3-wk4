@@ -6,7 +6,7 @@
 <div class="container">
     <section class="filters">
         <div class="filters-categories">
-            <p class="lead">Deselect categories to view products in only the selected categories</p>
+            <p class="lead">Choose Categories</p>
             <div class="filters-toggles">
                 <span class="filters-toggle active" data-category="Tops">Tops</span>
                 <span class="filters-toggle active" data-category="Pants">Pants</span>
@@ -26,8 +26,7 @@
         if(db_connect()) {
             $query = " SELECT * FROM product_tb
                       INNER JOIN category_tb
-                      ON category_tb.category_id=product_tb.category_id
-                      ORDER BY product_id ";
+                      ON category_tb.category_id=product_tb.category_id ";
             $queryResult = mysqli_query(db_connect(), $query);
             // var_dump($queryResult);
 
@@ -56,11 +55,11 @@
                             <div class='card'>
                             <img class='card-img-top' src='$image' alt='Card image'>
                             <div class='card-body'>
-                                <h4 class='card-title'>$title</h4>
+                                <h4 class='card-title title'>$title</h4>
                                 <p class='card-text text-muted'>Category: $categoryName</p>
                                 <p class='card-text'>The best $lowerCaseCategory ever.</p>
-                                <p class='card-text'>$ $price</p>
-                                <a href='' class='btn btn-primary buy-btn'>Buy</a>
+                                <p class='card-text price'>$ $price</p>
+                                <button type='button' class='btn btn-primary buy-btn'>Buy</button>
                             </div>
                             </div>
                         </div>

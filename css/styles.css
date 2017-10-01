@@ -171,12 +171,6 @@ hr {
   margin-top: 70px;
 }
 
-@media screen and (max-width: 420px) {
-  .filters {
-    margin-top: 0;
-  }
-}
-
 .filters-categories {
   flex-basis: 65%;
 }
@@ -210,13 +204,18 @@ hr {
 }
 
 .cart-icon {
-  color: #00A6B6;
-  padding: 0px 20px 20px 0px;
   cursor: pointer;
+  width: 50px;
+  position: fixed;
+  right: calc(70px / 2 - 28px / 2);
+  top: calc(22% - 24px / 2);
+  z-index: 2;
 }
 
-.cart-icon:hover {
-  color: #0dd5f5;
+@media screen and (max-width: 420px) {
+  .cart-icon {
+    right: calc(40px / 2 - 28px / 2);
+  }
 }
 
 #modal .fade {
@@ -271,6 +270,28 @@ hr {
   overflow-y: auto;
 }
 
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10% {
+    transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -6deg);
+  }
+  30%, 90% {
+    transform: scale3d(1.3, 1.3, 1.3) rotate3d(0, 0, 1, 6deg);
+  }
+  60% {
+    transform: scale3d(1.3, 1.3, 1.3) rotate3d(0, 0, 1, -6deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  animation: tada 0.6s;
+}
+
 .page-footer {
   background-color: #00A6B6;
   color: white;
@@ -290,4 +311,13 @@ hr {
 
 .image-preview .img-responsive {
   width: 50%;
+}
+
+@media screen and (max-width: 568px) {
+  .logo-text {
+    font-size: 0.8em;
+  }
+  .logo {
+    width: 10%;
+  }
 }
