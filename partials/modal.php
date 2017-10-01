@@ -12,11 +12,11 @@
       </div>
       <div class="modal-body">
         <p class="lead">Your Items</p>
-        <div class="cart-items"></div>
+        <div class="row cart-items"></div>
+        <div class="total"></div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info">Save changes</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

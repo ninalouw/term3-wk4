@@ -58,7 +58,7 @@
                                 <h4 class='card-title title'>$title</h4>
                                 <p class='card-text text-muted'>Category: $categoryName</p>
                                 <p class='card-text'>The best $lowerCaseCategory ever.</p>
-                                <p class='card-text price'>$ $price</p>
+                                <p class='card-text price'>$$price</p>
                                 <button type='button' class='btn btn-primary buy-btn'>Buy</button>
                             </div>
                             </div>

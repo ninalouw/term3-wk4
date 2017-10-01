@@ -214,6 +214,7 @@ hr {
 	color: $primary-color;
 	transition: all 0.3s;
     margin-bottom: 10px;
+    border-radius:6px;
 }
 
 .filters-toggle.active {
@@ -282,6 +283,12 @@ hr {
             margin: 30px 0;
 			padding-bottom: 30px;
 			position: relative;
+        }
+        .total {
+            color: #0082F9 !important;
+            p .lead {
+                color: #0082F9 !important;
+            }
         }
     }
     .modal-open .modal {

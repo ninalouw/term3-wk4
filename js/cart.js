@@ -1,11 +1,10 @@
-//	object 
+//items object 
 var items = {};
 //'buy' click event - when user clicks 'buy' button
 $('.buy-btn').click(function () {
     var $this = $(this);
     var price = $this.siblings('.price').text();
     var title = $this.siblings('.title').text();
-    // console.log(price, title);
 
     //	toggle active class of the button
     $this.toggleClass('active');
@@ -28,30 +27,55 @@ $('.buy-btn').click(function () {
         //REMOVE: remove element from items object
         var prop = title;
         delete items[prop];
+        console.log(items);
         //empty modal if we remove an item
-        var modal = $('.modal-body')
-        modal.empty();
+        // var modalItems = $('.cart-items')
+        // modalItems.empty();
+        // var elem = $('.cart-items, div[data-title="'+ prop + '"]').hide();
+        // console.log(elem);
+        // populateModal();
     }
     populateModal();
 });
 
 function populateModal(){
     //get modal
-    var modal = $('.modal-body')
+    var modalItems = $('.cart-items')
     //append items data to modal
     for (var key in items) {
         var productItem = key;
         var price = items[key];
-        var productPara = $('<p>' + productItem + ' - - - - - - - - - ' + price + '</p>');
+        var productPara = $('<div data-title=" ' + productItem + ' " class="col-md-5 col-xs-5"><p>' 
+                            + productItem + '</p></div>' 
+                            + '<span><hr></span>' + 
+                            '<div class="col-md-5 col-xs-5"><p>' 
+                            + price + '</p></div>');
     }
-    console.log(productPara);
-    modal.append(productPara);
+    modalItems.append(productPara);
+
 }
-//onclick of cart icon, call populate modal
-// $('#Modal').on('show.bs.modal', function () {
-//     // var button = $(event.relatedTarget) // Button that triggered the modal
-//     // populateModal();
-// })
+
+//calculate total cost of products
+function calculateTotal(){
+    var modalTotal = $('.total');
+    modalTotal.empty();
+    //calculate total price
+    var unformattedPriceArray = Object.values(items);
+    var total = 0;
+    for (var i = 0; i < unformattedPriceArray.length; i++) {
+        var subArray = unformattedPriceArray[i].split('$');
+        var name = subArray[0];
+        var price = Number(subArray[1]);
+        total += price;
+    }
+    var productTotal = $('<p class="lead"> Total Cost: $' + total.toFixed(2) + '</p>');
+    modalTotal.append(productTotal);
+}
+
+//onclick of cart icon, calculate total price so far
+$('#Modal').on('show.bs.modal', function () {
+    calculateTotal();
+});
 
 
 
